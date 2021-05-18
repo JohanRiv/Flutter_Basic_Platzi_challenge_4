@@ -29,7 +29,7 @@ class ButtonBarWidget extends StatelessWidget {
         margin: EdgeInsets.only(right: 20),
         child: IconButton(
           icon: const Icon(
-            Icons.bookmark_outline,
+            Icons.add,
             color: Colors.transparent,
           ),
           color: Colors.white,

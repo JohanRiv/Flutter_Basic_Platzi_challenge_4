@@ -45,17 +45,6 @@ class ProfileDataWidget extends StatelessWidget {
       children: [profilePhoto, userData],
     );
 
-    Column profile = Column(
-      children: [
-        Text(
-          "Profile",
-          style:
-              TextStyle(color: Colors.white, fontFamily: "Lato", fontSize: 22),
-        ),
-        profileData
-      ],
-    );
-
-    return Container(child: profile);
+    return Container(child: profileData);
   }
 }

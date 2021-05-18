@@ -39,7 +39,7 @@ class ImageDescriptionWidget extends StatelessWidget {
       width: MediaQuery.of(context).size.width * 0.4,
       margin: EdgeInsets.only(top: 10, bottom: 10),
       child: Text(
-        siteName,
+        "Steps " + siteName,
         style: TextStyle(
             color: Colors.yellowAccent.shade400,
             fontFamily: "Lato",
@@ -57,12 +57,15 @@ class ImageDescriptionWidget extends StatelessWidget {
       backgroundColor: Colors.green,
     );
 
-    Column description = Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [siteNameText, siteDescriptionText, siteStepsText],
-    );
+    Container description = Container(
+        margin: EdgeInsets.all(10),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [siteNameText, siteDescriptionText, siteStepsText],
+        ));
 
     Container cardDescription = Container(
+      alignment: Alignment.center,
       color: Colors.white,
       decoration: BoxDecoration(
           borderRadius: BorderRadius.all(Radius.circular(20)),
