@@ -10,8 +10,8 @@ class ImageDescriptionWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Container siteNameText = Container(
-      width: MediaQuery.of(context).size.width * 0.4,
-      margin: EdgeInsets.only(top: 10, bottom: 10),
+      width: MediaQuery.of(context).size.width * 0.7,
+      margin: EdgeInsets.only(top: 10, bottom: 3),
       child: Text(
         siteName,
         style: TextStyle(
@@ -23,10 +23,10 @@ class ImageDescriptionWidget extends StatelessWidget {
     );
 
     Container siteDescriptionText = Container(
-      width: MediaQuery.of(context).size.width * 0.4,
+      width: MediaQuery.of(context).size.width * 0.7,
       margin: EdgeInsets.only(top: 5, bottom: 5),
       child: Text(
-        siteName,
+        siteDescription,
         style: TextStyle(
           color: Colors.black38,
           fontFamily: "Lato",
@@ -36,12 +36,12 @@ class ImageDescriptionWidget extends StatelessWidget {
     );
 
     Container siteStepsText = Container(
-      width: MediaQuery.of(context).size.width * 0.4,
-      margin: EdgeInsets.only(top: 10, bottom: 10),
+      width: MediaQuery.of(context).size.width * 0.7,
+      margin: EdgeInsets.only(top: 5, bottom: 5),
       child: Text(
-        "Steps " + siteName,
+        "Steps " + siteSteps,
         style: TextStyle(
-            color: Colors.yellowAccent.shade400,
+            color: Colors.yellow.shade700,
             fontFamily: "Lato",
             fontSize: 15,
             fontWeight: FontWeight.w700),
@@ -54,20 +54,27 @@ class ImageDescriptionWidget extends StatelessWidget {
         Icons.favorite,
         color: Colors.white,
       ),
-      backgroundColor: Colors.green,
+      mini: true,
+      backgroundColor: Colors.greenAccent.shade400,
     );
 
     Container description = Container(
-        margin: EdgeInsets.all(10),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [siteNameText, siteDescriptionText, siteStepsText],
+        margin: EdgeInsets.only(top: 5, left: 20),
+        child: ListView(
+          children: [
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [siteNameText, siteDescriptionText, siteStepsText],
+            )
+          ],
         ));
 
     Container cardDescription = Container(
+      height: 120,
+      width: MediaQuery.of(context).size.width * 0.7,
       alignment: Alignment.center,
-      color: Colors.white,
       decoration: BoxDecoration(
+          color: Colors.white,
           borderRadius: BorderRadius.all(Radius.circular(20)),
           shape: BoxShape.rectangle,
           boxShadow: <BoxShadow>[
@@ -78,7 +85,7 @@ class ImageDescriptionWidget extends StatelessWidget {
     );
 
     Stack stackCardDescription = Stack(
-      alignment: Alignment(0.9, 1.1),
+      alignment: Alignment(0.9, 1.2),
       children: [cardDescription, favoriteButton],
     );
 

@@ -11,10 +11,10 @@ class ProfileDataWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     Container profilePhoto = Container(
       margin: EdgeInsets.only(top: 20, right: 20),
-      width: 80,
-      height: 80,
+      width: 90,
+      height: 90,
       decoration: BoxDecoration(
-          border: Border.all(color: Colors.white, width: 1),
+          border: Border.all(color: Colors.white, width: 2),
           shape: BoxShape.circle,
           image: DecorationImage(
             fit: BoxFit.cover,
@@ -24,16 +24,16 @@ class ProfileDataWidget extends StatelessWidget {
 
     Text userNameText = Text(
       userName,
-      style: TextStyle(color: Colors.white, fontFamily: "Lato", fontSize: 17),
+      style: TextStyle(color: Colors.white, fontFamily: "Lato", fontSize: 25),
     );
 
     Text userMailText = Text(
       userMail,
-      style: TextStyle(color: Colors.black26, fontFamily: "Lato", fontSize: 12),
+      style: TextStyle(color: Colors.white38, fontFamily: "Lato", fontSize: 15),
     );
 
     Container userData = Container(
-      width: MediaQuery.of(context).size.width * 0.7,
+      width: MediaQuery.of(context).size.width * 0.6,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -45,6 +45,7 @@ class ProfileDataWidget extends StatelessWidget {
       children: [profilePhoto, userData],
     );
 
-    return Container(child: profileData);
+    return Container(
+        width: MediaQuery.of(context).size.width, child: profileData);
   }
 }

@@ -8,8 +8,8 @@ class ImageCardWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     Container imageCard = Container(
-      height: 350,
-      width: MediaQuery.of(context).size.width * 0.8,
+      height: 220,
+      width: MediaQuery.of(context).size.width * 0.9,
       decoration: BoxDecoration(
           image: DecorationImage(
               fit: BoxFit.cover, image: AssetImage(imageCardPath)),
