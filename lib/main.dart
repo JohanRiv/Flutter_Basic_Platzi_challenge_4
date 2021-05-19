@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:platzi_reto_4/profile_page/profile_page.dart';
+import 'package:platzi_reto_4/general_ui/widgets/nav_bar_widget.dart';
 
 void main() {
   runApp(MyApp());
@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: Scaffold(
-        body: ProfilePage(),
+        body: NavBarWidget(),
       ),
     );
   }

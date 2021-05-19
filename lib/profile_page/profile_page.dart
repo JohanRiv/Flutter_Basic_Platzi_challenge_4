@@ -56,7 +56,7 @@ class ProfilePage extends StatelessWidget {
         ));
 
     Container userSites = Container(
-      margin: EdgeInsets.only(left: 10, top: 290),
+      margin: EdgeInsets.only(left: 10, top: 340),
       child: Column(
         children: [
           ImagePublicationWidget(
