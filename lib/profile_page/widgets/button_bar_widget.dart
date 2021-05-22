@@ -5,7 +5,7 @@ class ButtonBarWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     Container tagButton = Container(
         margin:
-            EdgeInsets.only(right: MediaQuery.of(context).size.width * 0.060),
+            EdgeInsets.only(right: MediaQuery.of(context).size.width * 0.050),
         child: Material(
             color: Colors.transparent,
             child: Center(
@@ -24,7 +24,7 @@ class ButtonBarWidget extends StatelessWidget {
 
     Container cardButton = Container(
         margin:
-            EdgeInsets.only(right: MediaQuery.of(context).size.width * 0.060),
+            EdgeInsets.only(right: MediaQuery.of(context).size.width * 0.050),
         child: Material(
             color: Colors.transparent,
             child: Center(
@@ -43,7 +43,7 @@ class ButtonBarWidget extends StatelessWidget {
 
     Container addButton = Container(
         margin:
-            EdgeInsets.only(right: MediaQuery.of(context).size.width * 0.060),
+            EdgeInsets.only(right: MediaQuery.of(context).size.width * 0.050),
         child: Material(
             color: Colors.transparent,
             child: Center(
@@ -63,7 +63,7 @@ class ButtonBarWidget extends StatelessWidget {
 
     Container messageButton = Container(
         margin:
-            EdgeInsets.only(right: MediaQuery.of(context).size.width * 0.060),
+            EdgeInsets.only(right: MediaQuery.of(context).size.width * 0.050),
         child: Material(
             color: Colors.transparent,
             child: Center(
